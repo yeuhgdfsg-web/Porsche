@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png " type="image/png">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <img src="images/logo.png" alt="Porsche Logo">
+            <p>PORSCHE</p>
+        </div>
+    </div>
+    
+    <!-- Scroll Bar -->
+    <div id="scroll-bar" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background: red;
+    z-index: 9999;
+    ">
+    </div>
+
+    <!-- Floating Contact Icon -->
+    <div class="contact-float" id="contactBtn">
+        <img src="images/contact-icon.png" alt="Contact">
+    </div>
+
+    <!-- Contact Box -->
+    <div class="contact-box" id="contactBox">
+        <h3>Contact Us</h3>
+        <p>Feel free to reach out:</p>
+        <a href="https://wa.me/201234567890" target="_blank">WhatsApp</a>
+        <a href="mailto:example@gmail.com" target="_blank">Email</a>
+        <a href="tel:+201234567890" target="_blank">Phone Call</a>
+    </div>
+
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Porsche Logo">
+            <span>Porsche</span>
+        </div>
+        <!--span:enables me to design by css-->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#models">Models</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop class="bg-video" poster="images/hero-poster.jpg">
+            <source src="videos/porsche.mp4" type="video/mp4">
+            Your browser does not support the vedio tag.
+        </video>
+
+        <div class="hero-text">
+            <h1>Unleash the Power</h1>
+            <p>Experience the perfect blend of luxury and performance.</p>
+            <a href="#models" class="btn">Explore Now</a>
+        </div>a
+    </section>
+
+    <section class="models" id="models">
+        <h2>Our Models</h2>
+        <div class="cards">
+            <div class="card reveal">
+                <img src="images/911.jfif" alt="Porsche 911" loading="lazy">
+                <h3>Porsche 911</h3>
+            </div>
+            <div class="card reveal">
+                <img src="images/taycan.jfif" alt="Porsche Taycan" loading="lazy">
+                <h3>Porsche Taycan</h3>
+            </div>
+            <div class="card reveal">
+                <img src="images/cayenne.jfif" alt="Porsche Cayenne" loading="lazy">
+                <h3>Porsche Cayenne</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Porsche</h2>
+
+        <div class="about-cards reveal">
+
+            <!-- Card 1 -->
+            <div class="about-card">
+                <img src="images/911.jfif" alt="Porsche 911" loading="lazy">
+                <h3>Porsche 911</h3>
+                <p>
+                    The Porsche 911 is a timeless sports car icon, known for its rear-engine design,
+                    exceptional handling, and thrilling performance across all generations.
+                </p>
+                <ul>
+                    <li>Top Speed: 293 km/h</li>
+                    <li>Engine: Twin-Turbo 6-Cylinder</li>
+                    <li>0–100 km: 3.4 seconds</li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="about-card">
+                <img src="images/taycan.jfif" alt="Porsche Taycan" loading="lazy">
+                <h3>Porsche Taycan</h3>
+                <p>
+                    Porsche Taycan is the brand’s first fully electric sports car, combining futuristic
+                    design with instant acceleration and zero-emission performance.
+                </p>
+                <ul>
+                    <li>Turbocharged Electric Motors</li>
+                    <li>Fast Charging up to 270 kW</li>
+                    <li>Range up to 480 km</li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="about-card">
+                <img src="images/cayenne.jfif" alt="Porsche Cayenne" loading="lazy">
+                <h3>Porsche Cayenne</h3>
+                <p>
+                    The Porsche Cayenne is a luxury SUV that blends performance, comfort, and
+                    everyday practicality while keeping Porsche’s sporty DNA.
+                </p>
+                <ul>
+                    <li>Luxury Interior</li>
+                    <li>Sport Mode Handling</li>
+                    <li>V6 or V8 Engines</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <h3>Learn More</h3>
+        <p>Visit our official pages:</p>
+        <a href="https://www.porsche.com" target="_blank">Official Porsche Website</a> &#124;
+        <a href="https://www.instagram.com/porsche/" target="_blank">Instagram</a> &#124;
+        <a href="https://www.youtube.com/user/Porsche" target="_blank">YouTube</a>
+
+        <h3>Model Comparison Table</h3>
+        <table class="reveal">
+            <tr>
+                <th>Model</th>
+                <th>Type</th>
+                <th>Horsepower</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>911</td>
+                <td>Sports Car</td>
+                <td>473 hp</td>
+                <td>$106,000</td>
+            </tr>
+            <tr>
+                <td>Taycan</td>
+                <td>Electric</td>
+                <td>522 hp</td>
+                <td>$90,000</td>
+            </tr>
+            <tr>
+                <td>Cayenne</td>
+                <td>SUV</td>
+                <td>453 hp</td>
+                <td>$80,000</td>
+            </tr>
+        </table>
+
+        <h3>Exclusive Discount Form</h3>
+        <form>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="model">Select Model:</label><br>
+            <select id="model" name="model">
+                <option>Porsche 911</option>
+                <option>Porsche Taycan</option>
+                <option>Porsche Cayenne</option>
+            </select><br><br>
+
+            <div class="checkbox-container">
+                <input type="checkbox">
+                <label>Receive Updates</label>
+            </div>
+
+            <input type="submit" value="Get My Discount" class="btn">
+        </form>
+    </section>
+    <section class="tour-video">
+        <h2>Factory Tour</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9_fs7YTqj9k?si=NDDYVjJ2DGCtPN9V"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to book a test drive? Reach out to us below</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><b>Address:</b> Porsche Center Cairo, Egypt</p>
+                <p><b>Phone:</b> +20 123 456 789</p>
+                <p><b>Email:</b> <a href="mailto:info@porsche.com">info@porsche.com</a></p>
+                <p><b>Follow us:</b></p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/porsche/" target="_blank">Instagram</a> &#124;
+                    <a href="https://www.facebook.com/porsche/" target="_blank">Facebook</a> &#124;
+                    <a href="https://www.youtube.com/user/Porsche" target="_blank">YouTube</a>
+                </div>
+            </div>
+
+            <div class="contact-form reveal">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Message subject">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message..."
+                        required></textarea>
+
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Porsche Egypt &#124; Designed by Shahd Taha</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
